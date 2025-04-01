@@ -1,0 +1,39 @@
+.my-hero-sec {
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/lap23.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-size: 700;
+  font-weight: 700;
+  position: relative;
+}
+
+.discription {
+  font-size: 1em;
+  justify-content: center;
+}
+.connetion-link a {
+  padding: 10px 15px;
+  background-color: blue !important;
+  text-decoration: none !important;
+  color: white !important;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 3em;
+}
+
+.connetion-link a:hover {
+  background-color: darkblue !important;
+  color: #f0f0f0 !important;
+  text-decoration: underline !important;
+}
