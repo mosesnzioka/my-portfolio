@@ -5,7 +5,8 @@ function Education() {
   return (
     <div className="education-section">
         <Title maintitle={"🎓 Educational Background"} />
-      <p>My journey in technology and software development began at <strong>Murang’a University of Technology</strong> , where I earned a degree in
+        <div className="education-description">
+        <p >My journey in technology and software development began at <strong>Murang’a University of Technology</strong> , where I earned a degree in
        <strong>Information Technology</strong>During my time there, I gained a strong foundation in <i>programming, software development, database management, and problem-solving,</i>
        which set the stage for my career as a full-stack web developer. <br />
        Beyond the classroom, I was actively involved in practical projects that allowed me to apply my knowledge in 
@@ -19,7 +20,15 @@ function Education() {
        full-stack development,</strong>  exploring new technologies, and building scalable, high-performance applications. <br />
        My educational journey has shaped me into a <strong>problem-solving, innovation-driven developer,</strong> 
        and I am always eager to apply my skills in <strong>real-world projects that make a lasting impact.</strong></p>
-      <a href="/path-to-your-cv.pdf" download className="cv-button">Download My CV</a>
+
+       <div className="download-cv-link">
+       <a href="/path-to-your-cv.pdf" download className="cv-button">Download My CV</a>
+
+       </div>
+       
+        </div>
+
+
     </div>
   );
 }
