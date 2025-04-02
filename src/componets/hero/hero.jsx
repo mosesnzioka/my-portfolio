@@ -12,7 +12,9 @@ function Hero() {
           with initiative, commitment, and attention to detail.
         </p>
         <div className="connetion-link">
-          <a href="https://github.com/mosesnzioka" target="_blank" >project's done</a>
+          <a href="https://github.com/mosesnzioka" target="_blank">
+            project's done
+          </a>
         </div>
       </div>
     </div>

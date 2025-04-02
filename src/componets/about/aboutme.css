@@ -1,34 +1,41 @@
+/*styles the whole aboutme section*/
 .aboutme-description {
-    display: flex;
-    align-items: stretch;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .aboutme-description div {
-    flex: 1; 
-  }
-  
-  .aboutme-description p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .abouteme-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .abouteme-image img {
-    width: 100%;
-    max-width: 400px;
-    height: 28em; 
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
-  }
-  
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 3em;
+}
+
+.aboutme-description div {
+  flex: 1;
+}
+/*taking only the pharagraph part*/
+.aboutme-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+/*styling image div*/
+.abouteme-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*styling only the image*/
+.abouteme-image img {
+  width: 100%;
+  max-width: 400px;
+  height: 28em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.abouteme-image img:hover {
+  transform: scale(1.1);
+}

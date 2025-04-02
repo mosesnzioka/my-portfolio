@@ -1,28 +1,27 @@
-.education-description{
-    line-height: 1.7;
-    padding: 2em;
-    align-items: center;
-    text-align: center;
+.education-description {
+  line-height: 1.7;
+  padding: 2em;
+  align-items: center;
+  text-align: center;
 }
 
-.download-cv-link a{
-        padding: 10px 15px;
-        background-color: blue !important;
-        text-decoration: none !important;
-        color: white !important;
-        font-size: 20px;
-        font-weight: bold;
-        border-radius: 5px;
-        display: inline-block;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        margin-top: 9px;
-      }
-      
-      .download-cv-link a:hover {
-        background-color: darkblue !important;
-        color: #f0f0f0 !important;
-        text-decoration: underline !important;
-      }
+.download-cv-link a {
+  padding: 10px 15px;
+  background-color: blue !important;
+  text-decoration: none !important;
+  color: white !important;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 9px;
+}
 
+.download-cv-link a:hover {
+  background-color: darkblue !important;
+  color: #f0f0f0 !important;
+  text-decoration: underline !important;
+}
