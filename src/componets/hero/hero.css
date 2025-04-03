@@ -1,30 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
 .my-hero-sec {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 50vh;
   background:
-    linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
     url("../../assets/lap23.jpg") no-repeat center center;
   background-size: cover;
   color: white;
-  text-align: center;
-  font-size: 700;
-  font-weight: 700;
-  position: relative;
+  padding: 20px;
 }
 
 .discription {
+  flex: 1;
   font-size: 1em;
-  justify-content: center;
-  margin-top: 3em;
   line-height: 1.8;
+  padding: 20px;
 }
 
-.description h2 {
+.discription h2 {
   text-transform: capitalize;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  font-size: 2em;
 }
+
+.connetion-link {
+  margin-top: 2em;
+}
+
 .connetion-link a {
   padding: 10px 15px;
   background-color: blue !important;
@@ -37,11 +44,99 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  margin-top: 3em;
 }
 
 .connetion-link a:hover {
   background-color: darkblue !important;
   color: #f0f0f0 !important;
   text-decoration: underline !important;
+}
+
+.social-media-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.social-media-links h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.social-media-links div {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 0.8em;
+}
+
+.social-media-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease-in-out,
+    background-color 0.3s;
+}
+
+.social-media-links a:hover {
+  transform: rotate(360deg) scale(1.1);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.social-media-links a svg {
+  color: white;
+  font-size: 24px;
+}
+
+.download-cv-link {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.download-cv-link a {
+  display: inline-block;
+  padding: 12px 40px;
+  background: transparent;
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none !important;
+  border: 3px solid white;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  line-height: 1.5;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-cv-link a::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 2px solid white;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-cv-link a:hover {
+  background: white;
+  color: black !important;
+  border-color: black;
+}
+
+.download-cv-link a:hover::before {
+  border-color: black;
 }

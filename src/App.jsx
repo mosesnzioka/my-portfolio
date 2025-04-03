@@ -4,6 +4,7 @@ import Hero from "./componets/hero/hero";
 import AboutMe from "./componets/about/aboutme";
 import Education from "./componets/education/education";
 import MyInterest from "./componets/interest/interest";
+import MyProjects from "./componets/projects/projects";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <AboutMe />
       <Education />
       <MyInterest />
+      <MyProjects />
     </>
   );
 }

@@ -44,11 +44,7 @@ function Education() {
           <strong>real-world projects that make a lasting impact.</strong>
         </p>
 
-        <div className="download-cv-link">
-          <a href="/path-to-your-cv.pdf" download className="cv-button">
-            Download My CV
-          </a>
-        </div>
+        <div className="download-cv-link"></div>
       </div>
     </div>
   );
