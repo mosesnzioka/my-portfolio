@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 /* Style the header container */
 .header-links {
+  background-color: transparent;
+  color: var(--text-white-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1.8rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1.5em 2em;
-  background-color: #1a1a1a;
-  color: white;
+  transition: background-color 0.3s ease;
 }
 
 /* Style the navigation bar */
@@ -28,4 +35,10 @@
 /* Add hover effect */
 .navigation-link a:hover {
   color: #f4a261;
+}
+
+.portfolio-logo h2 {
+  color: white;
+  font-family: "Caveat", cursive;
+  margin-right: 50px;
 }

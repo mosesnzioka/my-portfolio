@@ -2,8 +2,10 @@ import "./header.css";
 function Headers() {
   return (
     <header className="header-links">
-      <div>
-        <h2>Moses Portfolio</h2>
+      <div className="portfolio-logo">
+        <h2>
+          <i class="fa-brands fa-asymmetrik"></i>Moses Portfolio
+        </h2>
       </div>
       <nav aria-label="Main Navigation">
         <ul className="headers">

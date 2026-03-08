@@ -1,6 +1,77 @@
+/* Section Container */
+.education-section {
+  padding: 60px 20px;
+  background-color: lightslategray;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 4em auto;
+  color: white;
+}
+
+/* Flex Layout for description and image */
 .education-description {
-  line-height: 1.7;
-  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Description block */
+.education-text {
+  flex: 2 1 500px;
+}
+
+.education-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2em;
+  color: #e0e0e0;
+}
+
+/* Image block */
+.education-image {
+  flex: 1 1 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.education-image img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Title styling */
+.education-section h1,
+.education-section h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   text-align: center;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .education-description {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .education-text {
+    flex: 1 1 100%;
+  }
+
+  .education-image {
+    margin-top: 20px;
+  }
 }

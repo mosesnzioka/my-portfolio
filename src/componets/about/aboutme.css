@@ -1,44 +1,73 @@
-/*styles the whole aboutme section*/
-.aboutme-description {
-  display: flex;
-  align-items: stretch;
-  gap: 20px;
-  padding: 20px;
+/* Container for the full About Me section */
+.aboutme-section {
+  padding: 60px 20px;
+  background-color: lightslategray;
+  border-radius: 12px;
   max-width: 1200px;
-  margin: auto;
-  margin-top: 3em;
-  background-color: #f9f9f9;
+  margin: 4em auto;
+  color: #fff;
 }
 
-.aboutme-description div {
-  flex: 1;
+/* Flex container for image and text */
+.aboutme-description {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-/*taking only the pharagraph part*/
-.aboutme-description p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-}
-/*styling image div*/
-.abouteme-image {
+
+/* Image section */
+.aboutme-image {
+  flex: 1 1 350px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/*styling only the image*/
-.abouteme-image img {
+
+.aboutme-image img {
   width: 100%;
-  max-width: 400px;
-  height: 28em;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect */
-.abouteme-image img:hover {
-  transform: scale(1.1);
-  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+.aboutme-image img:hover {
+  transform: scale(1.05);
   filter: brightness(1.1);
+}
+
+/* Text section */
+.aboutme-text {
+  flex: 2 1 500px;
+}
+
+.aboutme-text p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 1.2em;
+  color: #f8f8f8;
+}
+
+/* Title styling */
+.aboutme-section h1,
+.aboutme-section h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 768px) {
+  .aboutme-description {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutme-text {
+    flex: 1 1 100%;
+  }
 }
