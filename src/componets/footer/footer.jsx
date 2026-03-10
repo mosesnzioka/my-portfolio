@@ -8,13 +8,16 @@ function Footer() {
           <i class="fa-brands fa-asymmetrik"></i> Moses Portfolio
         </div>
         <div>
-          <div>
+          <div class="footer-projects">
+            <h2>projects</h2>
             <a href="#">
-              projects <h3>carpool system</h3>
+                carpooling System
+            </a>
+            <a href="#">
+                foodi restourant
             </a>
           </div>
-          <h3>about me</h3>
-          <h3>projects</h3>
+        
           <h3></h3>
         </div>
         <div class="footer-contact">

@@ -7,7 +7,7 @@ import Headers from "../header/headers";
 function Hero() {
   return (
     <div>
-      <Headers />
+      <Headers /> 
       <div className="my-hero-sec">
         <div className="discription">
           <h2>personal summary</h2>
@@ -44,11 +44,7 @@ function Hero() {
               <FontAwesomeIcon icon={faGithub} size="2x" color="white" />
             </a>
           </div>
-          <div className="download-cv-link">
-            <a href="../../../public/Moses Nzioka Resume (4).pdf" download>
-              Download CV
-            </a>
-          </div>
+         
         </div>
       </div>
     </div>

@@ -50,6 +50,13 @@
   gap: 20px;
 }
 
+.footer-projects a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+
 /* Social media icons */
 .social-icons {
   display: flex;

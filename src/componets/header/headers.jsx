@@ -23,6 +23,13 @@ function Headers() {
           </li>
         </ul>
       </nav>
+
+      <div className="download-cv-link">
+            <a href="../../../public/Moses Nzioka Resume (4).pdf" download>
+              Download CV
+            </a>
+          </div>
+
     </header>
   );
 }

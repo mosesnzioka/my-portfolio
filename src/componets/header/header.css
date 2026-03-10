@@ -42,3 +42,50 @@
   font-family: "Caveat", cursive;
   margin-right: 50px;
 }
+
+
+.download-cv-link {
+  margin-top: 1em;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.download-cv-link a {
+  display: inline-block;
+  padding: 12px 40px;
+  background: transparent;
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none !important;
+  border: 3px solid white;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  line-height: 1.5;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-cv-link a::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 2px solid white;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-cv-link a:hover {
+  background: white;
+  color: black !important;
+  border-color: black;
+}
+
+.download-cv-link a:hover::before {
+  border-color: black;
+}
